@@ -8,4 +8,60 @@
 body{
 
     font-family: "Work Sans", serif;
+    
+}
+
+/* Shortcut style -  display flex for all style together */
+.display-flex {
+    display: flex;
+}
+
+.brand{
+    color: rgb(19, 19, 19);
+}
+
+/* dark -02 shortcut  */
+.text-gray{
+    color: rgb(66, 66, 66);
+}
+/* dark-03 shortcut */
+.text-light-gray{
+    color:rgb(114, 114, 114);
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1) ;  
+}
+
+
+/* header style */
+
+/* navbar related style */
+
+.navbar{
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.nav-items{
+
+    list-style: none;
+    
+}
+
+.nav-links{
+    gap: 10px;
+    color: rgb(66, 66, 66);
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.navbar , .banner{
+
+    max-width: 1440px;
+    margin: 0 auto;
 }
