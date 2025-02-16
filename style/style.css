@@ -1,67 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-
-    font-family: "Work Sans", serif;
-    
+body {
+  font-family: "Work Sans", serif;
 }
 
-/* Shortcut style -  display flex for all style together */
+/* Shortcut shared style -  display flex for all style together */
 .display-flex {
-    display: flex;
+  display: flex;
 }
 
-.brand{
-    color: rgb(19, 19, 19);
+.brand {
+  color: rgb(19, 19, 19);
+  font-weight: 700;
+  font-size: 3rem;
+  /* 45PX BUT I USE REM FOR RESPONSIVE , 16PX is equal 1 rem */
 }
 
 /* dark -02 shortcut  */
-.text-gray{
-    color: rgb(66, 66, 66);
+.text-gray {
+  color: rgb(66, 66, 66);
 }
 /* dark-03 shortcut */
-.text-light-gray{
-    color:rgb(114, 114, 114);
+.text-light-gray {
+  color: rgb(114, 114, 114);
 }
 
-.bg-light{
-    background-color: rgba(255, 144, 14, 0.1) ;  
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+  width: auto;
+  /* height: 1322px; */
 }
 
+.btn-primary {
+  border-radius: 8px;
+  color: white;
+  background: rgb(255, 144, 14);
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 20px 25px;
+  margin: 10px;
+  border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section {
+  margin-top: 130px;
+}
 
 /* header style */
 
 /* navbar related style */
 
-.navbar{
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    
+.navbar {
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
 }
 
-.nav-items{
-
-    list-style: none;
-    
+.nav-items {
+  list-style: none;
 }
 
-.nav-links{
-    gap: 10px;
-    color: rgb(66, 66, 66);
+.nav-links {
+  gap: 10px;
+  color: rgb(66, 66, 66);
 }
 
-.nav-links a{
-    text-decoration: none;
+.nav-links a {
+  text-decoration: none;
 }
 
-.navbar , .banner{
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
-    max-width: 1440px;
-    margin: 0 auto;
+/* banner related styles */
+
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* team image styles */
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team {
+  align-items: center;
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+  gap: 50px;
+}
+#first {
+  color: rgb(114, 114, 114);
+  font-weight: 500;
+}
+
+#second {
+  color: rgb(255, 144, 14);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+/* small device responsive */
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .team {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  main > section {
+
+  margin-top: 30px;
+}
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .team{
+        flex-direction: column;
+    }
+    .our-features {
+
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  main > section {
+
+  margin-top: 80px;
+}
 }
